@@ -8,7 +8,7 @@
                 values[key] = value;
             }
             
-            const message = `First Name: ${values.fname}\nLast Name: ${values.lname}`;
+            const message = `${values.fname} ${values.lname}`;
             alert(message);
         }
 	
