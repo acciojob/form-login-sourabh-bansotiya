@@ -1,23 +1,13 @@
-
-       function getFormvalue(formId) {
-    // Get the values from the form
-    let firstName = document.getElementById('fname').value;
-    let middleName = document.getElementById('mname').value;
-    let lastName = document.getElementById('lname').value;
-
+ function getFormvalue() {
+    //Write your code here
+	var form = document.getElementById("form1");
+    // Get the values of first name and last name from the form
+    var firstName = form.fname.value;
+    var lastName = form.lname.value;
     // Construct the full name
-    let fullName = firstName;
-    
-    if (middleName) {
-        fullName += ` ${middleName}`;
-    }
-    
-    fullName += ` ${lastName}`;
-
-    // Display the full name using alert
+    var fullName = firstName + " " + lastName;
+    // Display the full name using an alert
     alert(fullName);
 }
-
-        
 	
     
